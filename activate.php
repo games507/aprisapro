@@ -1,7 +1,7 @@
 <?php
 // *************************************************************************
 // *                                                                       *
-// * DEPRIXA -  Integrated Web system                                      *
+// * APRISAPRO -  Integrated Web system                                      *
 // * Copyright (c) JAOMWEB. All Rights Reserved                            *
 // *                                                                       *
 // *************************************************************************
