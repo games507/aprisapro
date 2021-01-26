@@ -203,7 +203,7 @@
 											<div class="input-group-prepend">
 												<span class="input-group-text" id="basic-addon1"><i class="icon-phone"></i></span>
 											</div>
-											<input type="number" class="form-control"  name="r_phone"  placeholder="## ######">
+											<input type="number" class="form-control"  name="r_phone"  placeholder="61234567">
 										</div>
 									</div>
 									<div class="col-sm-12 col-md-6">
@@ -212,7 +212,7 @@
 											<div class="input-group-prepend">
 												<span class="input-group-text" id="basic-addon1"><i class="icon-screen-smartphone"></i></span>
 											</div>
-											<input type="number" class="form-control" id="phones" name="rc_phone" value="<?php echo $row->code_phone;?><?php echo $row->phone;?>" placeholder="(+1)3244152">
+											<input type="number" class="form-control" id="phones" name="rc_phone" value="<?php echo $row->code_phone;?><?php echo $row->phone;?>" placeholder="(+507)61234567">
 										</div>
 									</div>									                                     
 								</div>
@@ -254,10 +254,10 @@
 											<div class="input-group-prepend">
 												<span class="input-group-text" id="basic-addon1"><i class="icon-direction"></i></span>
 											</div>
-											<input type="text" class="form-control" id="search_location" placeholder="Search address on google map" required>
+											<input type="text" class="form-control" id="search_location" placeholder="Search address on google map" >
 											<div class="input-group-btn">
 												<button class="btn btn-info get_map" type="submit">
-													Buscar
+													Buscaar
 												</button>
 											</div>
 										</div>

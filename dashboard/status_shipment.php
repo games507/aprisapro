@@ -391,7 +391,7 @@
 												<div class="input-group-prepend">
 													<span class="input-group-text" id="basic-addon1"><i class="ti-direction"></i></span>
 												</div>
-												<input type="text" class="form-control" id="search_location" placeholder="Search address on google map" required>
+												<input type="text" class="form-control" id="search_location" placeholder="Search address on google map" >
 											</div>
 										</div>
 									</div>
