@@ -1,0 +1,175 @@
+body {
+    background-color: #FBFBFB;
+    font-size: 14px;
+
+}
+
+img {
+    border-width: 0;
+}
+
+#main-container {
+    width: 90%;
+    max-width: 940px;
+    margin: 20px auto;
+
+    background-color: #fff;
+
+    padding: 20px;
+
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    -moz-box-shadow: 0px 5px 15px #bbb;
+    -webkit-box-shadow: 0px 5px 15px #bbb;
+    box-shadow: 0 1px 3px rgba(0,0,0,.12),0 1px 2px rgba(0,0,0,.24);
+    overflow: hidden;
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 940px;
+    margin: 0 auto;
+}
+
+.header {
+    height: 50px;
+    position: relative;
+
+}
+
+.header-box {
+    height: 50px;
+    position: relative;
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+.hd-logo {
+    float: left;
+    margin: 0px 0px 0 0;
+    font-size: 13px;
+    line-height: 16px;
+    text-decoration: none;
+}
+
+.footer {
+    text-align: center;
+    font-size: 12px;
+
+}
+
+.box {
+    width: 900px;
+    height: 400px;
+    padding: 10px;
+    border: 1px solid black;
+    float: left;
+    margin: 0 20px 0 0;
+}
+
+.box-two {
+    overflow: auto;
+}
+
+.form-control {
+    border-radius: 0;
+
+}
+
+.md-preloader {
+  @easing:      cubic-bezier(.8,.0,.4,.8);
+
+  @speed:       1320ms;             // overall time taken for all the partitions to meet once
+  @color:       #448AFF;            // Blue A200 in the Material Design color palette
+  @linecap:     square;             // could be 'round', but the official one is square
+  @partitions:  5;                  // number of points where the arc meets
+  @arc:         0.72;               // fraction of the circumference that the arc grows to
+  @perimeter:   67px * pi();        // circumference of the raw svg inner cricle
+
+  font-size: 0;
+  display: inline-block;
+  animation: outer @speed * @partitions linear infinite;
+
+  svg {
+    animation: inner @speed linear infinite;
+
+    circle {
+      fill: none;
+      stroke: @color;
+      stroke-linecap: @linecap;
+      animation: arc @speed @easing infinite;
+    }
+  }
+
+  @keyframes outer {
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  @keyframes inner {
+    0% {
+      transform: rotate(-360deg * (1 - @arc));
+    }
+    100% {
+      transform: rotate(0);
+    }
+  }
+
+  @keyframes arc {
+    0% {
+      stroke-dasharray: 1 @perimeter;
+      stroke-dashoffset: 0;
+    }
+    40% {
+      stroke-dasharray: @arc * @perimeter, @perimeter;
+      stroke-dashoffset: 0;
+    }
+    100% {
+      stroke-dasharray: 1 @perimeter;
+      stroke-dashoffset: -@arc * @perimeter;
+    }
+  }
+}
+
+div.field{font-size:12px;font-weight:700;margin-bottom:10px}
+form{margin:0;padding:0}
+a.no{text-decoration:none}
+table tr td{padding:5px 2px}
+.tr{background-color:#DEDEDE}
+img{border:none}
+.all{background-image:none;font-weight:700}
+input,textarea,select,.inputbox-sml{font-family:robotoregular, Arial, Helvetica, sans-serif;font-size:14px;border:1px solid #ccc;border-radius:5px;color:#666;padding:5px}
+input:focus,textarea:focus{border:1px solid #e53935;background-color:#fff;background-image:none}
+select{border:1px solid #ccc;border-radius:5px;-moz-border-radius:5px;padding:4px 8px}
+a:active{color:#000}
+p{margin:5px 0}
+button{ font-family: "robotoregular", Arial, Helvetica, sans-serif; border: 3px solid #CCC; width: 100px; height: 40px; cursor: pointer; color: #fff;  font-size: 14px; }
+.btn button:hover{background-color: ;}
+div#installation{ border: 2px solid #CCC; padding: 0px; margin-top: 20px; margin-right: auto; margin-bottom: 20px; margin-left: auto; background-color: #F4F4F4; box-shadow:0 1px 0 #FFF inset, 0 2px 4px rgba(0,0,0,0.08);}
+.inner-content{ background-color: #FFF; border: 0px solid #CCC; border-radius: 3px; margin: 10px; padding: 10px }
+.lgn{text-align:right;}
+#copyright{line-height:16px;text-align:center;width:492px;margin:0 auto 10px}
+div.error{border:1px solid #CD5C52;color:#CD5C52;font-size:11px;font-weight:700;line-height:20px;background-color:#FFEDEB;background-image:url(../ico-err.gif);background-repeat:no-repeat;background-position:left;margin:0 10px;padding:10px 10px 10px 33px}
+.err{color:#C00;display:none;font-size:10px;line-height:16px;white-space:nowrap;background-image:url(../off.gif);background-repeat:no-repeat;padding:0 0 0 20px}
+h2#install{font-size:20px;line-height:50px;background-image:url(../install.png);background-repeat:no-repeat;background-position:10px;font-weight:lighter;padding:0 0 0 65px}
+.arrows{background-image:url(..//arrow.png);background-repeat:no-repeat;background-position:10px;font-weight:lighter;padding:0 0 0 45px}
+h5#log{ font-size: 15px; border-bottom-width: 2px; border-bottom-style: solid; border-bottom-color: #CCC; margin: 5px 0; padding: 2px; text-transform: uppercase; }
+h3{ font-size: 15px; border-bottom-width: 2px; border-bottom-style: solid; border-bottom-color: #CCC; margin: 5px 0; padding: 2px; text-transform: uppercase; }
+span.no{color:red;font-weight:700}
+#complete{color:#28a745;}
+span.yes{color:#067900;font-weight:700}
+td.elem{font-weight:700;vertical-align:top;width:250px}
+.license{background-color:#FFF;border:1px solid #ABABAB;height:400px;width:775px;margin:10px 20px 20px; padding:10px 10px 10px 10px}
+td.item-desc{vertical-align:top;width:250px;padding-right:20px}
+div.query{border:1px dotted #222;color:#777;font-size:10px;margin:0 0 10px}
+div.qerror{color:red;font-size:10px;margin:0 0 5px}
+div.db_errors{border:1px solid #777;height:300px;overflow:scroll;width:300px;margin:10px 0 0;padding:5px}
+div.remove_install{font-size:15px; background-color:#FFEDEB;border:1px dotted #CD5C52;color:#CD5C52;font-weight:700;text-align:center;padding:5px 0}
+a:link,a:visited{color:#0240a3}
+
+
